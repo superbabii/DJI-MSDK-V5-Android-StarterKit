@@ -1,4 +1,4 @@
-package com.example.msdksample
+package com.altaares.demo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
