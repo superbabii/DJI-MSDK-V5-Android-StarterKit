@@ -1,0 +1,30 @@
+apply from:rootProject.file('dependencies.gradle')
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        // Recommended Android Gradle Plugin version. It is not mandatory. You can customize the required version. However, if you need to introduce the UXSDK framework, it is recommended to use the recommended version, otherwise there may be compilation compatibility issues.
+        classpath "com.android.tools.build:gradle:7.4.2"
+
+        //Recommended Kotlin version. If you need to introduce the UXSDK framework, it is recommended to use the recommended version, otherwise compilation compatibility issues may occur
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.21" // DJI MSDK recommended version
+        // ... (remaining code)
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+    }
+}
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
