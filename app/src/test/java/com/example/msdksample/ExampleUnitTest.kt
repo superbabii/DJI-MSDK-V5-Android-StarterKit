@@ -1,4 +1,4 @@
-package com.example.msdksample
+package com.altaares.demo
 
 import org.junit.Test
 
